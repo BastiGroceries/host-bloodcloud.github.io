@@ -1,13 +1,11 @@
-import { account } from './appwrite';
-
 // Variable Declaration
-const loginBtn = document.querySelector("#login");
-const registerBtn = document.querySelector("#register");
-const loginForm = document.querySelector(".login-form");
-const registerForm = document.querySelector(".register-form");
-const prodfileScreen = document.getElementById("prodfileScreen");
-const loginsScreen = document.getElementById("loginsScreen");
-const googleLoginBtn = document.getElementById("google-login");
+
+
+    const loginBtn = document.querySelector("#login");
+    const registerBtn = document.querySelector("#register");
+    const loginForm = document.querySelector(".login-form");
+    const registerForm = document.querySelector(".register-form");
+
 
 // Login button function
 loginBtn.addEventListener('click', () => {
@@ -20,8 +18,8 @@ loginBtn.addEventListener('click', () => {
     loginForm.style.opacity = 1;
     registerForm.style.opacity = 0;
 
-    document.querySelector(".col-1").style.borderRadius = "0 30% 20% 0";
-});
+    document.querySelector(".col-1").style.borderRadius = "0 30% 20% 0"
+})
 
 registerBtn.addEventListener('click', () => {
     loginBtn.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
@@ -33,15 +31,10 @@ registerBtn.addEventListener('click', () => {
     loginForm.style.opacity = 0;
     registerForm.style.opacity = 1;
 
-    document.querySelector(".col-1").style.borderRadius = "0 20% 30% 0";
-});
+    document.querySelector(".col-1").style.borderRadius = "0 20% 30% 0"
+})
 
-async function handleLogin() {
-    account.createOAuth2Session(
-        'google',
-        'https://host-bloodcloud.github.io/',
-        'https://host-bloodcloud.github.io/failoauth2'
-    );
-}
 
-googleLoginBtn.addEventListener("click", handleLogin);
+
+
+
