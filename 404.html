@@ -1,96 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preview | BloodCloud</title>
-    
-    <!-- Poppins Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- BOXICONS -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
-    <!-- STYLE -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    
-    <style>
-        /* SOCIAL LOGIN */
-        .social-login a {
-            text-decoration: none;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Preview | BloodCloud</title>
 
-        /* ====== 404 Error Section ====== */
-        .error-404 {
-            text-align: center;
-            padding: 40px 20px;
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            color: #fff;
-            margin-top: 40px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
+  <!-- Poppins Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-        .error-title {
-            font-size: 72px;
-            font-weight: 700;
-            color: #ff4c4c;
-            margin-bottom: 10px;
-        }
+  <!-- BOXICONS -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-        .error-message {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
+  <!-- STYLE -->
+  <link rel="stylesheet" href="assets/css/style.css"/>
 
-        .error-btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background-color: #21264D;
-            color: white;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: background 0.3s;
-        }
+  <style>
+    /* SOCIAL LOGIN */
+    .social-login a {
+      text-decoration: none;
+    }
 
-        .error-btn:hover {
-            background-color: #1a1e3a;
-        }
-    </style>
+    /* ====== 404 Error Section ====== */
+    .error-404, .about-section {
+      text-align: center;
+      padding: 40px 20px;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      color: #fff;
+      margin-top: 40px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      display: none; /* hidden by default */
+    }
+
+    .error-title {
+      font-size: 72px;
+      font-weight: 700;
+      color: #ff4c4c;
+      margin-bottom: 10px;
+    }
+
+    .error-message {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .error-btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: #21264D;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+
+    .error-btn:hover {
+      background-color: #1a1e3a;
+    }
+
+    /* ====== About Section ====== */
+    .about-section h2 {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .about-section p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
-    <!-- Form Container -->
-    <div class="form-container">
-        <div class="col col-1">
-            <div class="image-layer">
-                <img src="assets/img/white-outline.png" class="form-image-main" alt="white-outline">
-                <img src="assets/img/dots.png" class="form-image dots" alt="dots">
-                <img src="assets/img/coin.png" class="form-image coin">
-                <img src="assets/img/spring.png" class="form-image springs">
-                <img src="assets/img/rocket.png" class="form-image rocket">
-                <img src="assets/img/cloud.png" class="form-image cloud">
-                <img src="assets/img/stars.png" class="form-image stars">                
-            </div>
-            <p class="featured-words">You are Few Minutes Way To Boost Your Skills With <span>BloodCloud</span> (Preview)</p>
-        </div>
-        <div class="col col-2">
-            <div class="btn-box">
-                <button class="btn btn-1" id="login">Home</button>
-                <button class="btn btn-2" id="register">About</button>
-            </div>
-
-            <!-- 404 -->
-            <div class="error-404">
-                <h1 class="error-title">404</h1>
-                <p class="error-message">Oops! The page you're looking for doesn't exist.</p>
-                <a href="/" class="error-btn">Go Back Home</a>
-            </div>
-        </div>
+  <!-- Form Container -->
+  <div class="form-container">
+    <div class="col col-1">
+      <div class="image-layer">
+        <img src="assets/img/white-outline.png" class="form-image-main" alt="white-outline">
+        <img src="assets/img/dots.png" class="form-image dots" alt="dots">
+        <img src="assets/img/coin.png" class="form-image coin">
+        <img src="assets/img/spring.png" class="form-image springs">
+        <img src="assets/img/rocket.png" class="form-image rocket">
+        <img src="assets/img/cloud.png" class="form-image cloud">
+        <img src="assets/img/stars.png" class="form-image stars">                
+      </div>
+      <p class="featured-words">You are Few Minutes Way To Boost Your Skills With <span>BloodCloud</span> (Preview)</p>
     </div>
 
-    <!-- JS -->
-    <script src="assets/js/main.js"></script>
+    <div class="col col-2">
+      <div class="btn-box">
+        <button class="btn btn-1" id="home">Home</button>
+        <button class="btn btn-2" id="about">About</button>
+      </div>
+
+      <!-- 404 -->
+      <div class="error-404" id="error404">
+        <h1 class="error-title">404</h1>
+        <p class="error-message">Oops! The page you're looking for doesn't exist.</p>
+        <a href="/" class="error-btn">Go Back Home</a>
+      </div>
+
+      <!-- About Section -->
+      <div class="about-section" id="aboutSection">
+        <h2>About BloodCloud</h2>
+        <p>
+          BloodCloud is a platform designed to help users boost their skills through high-quality resources, community support, and interactive content. Our goal is to empower learners and creators with modern, easy-to-use tools in a futuristic interface.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script>
+    const aboutBtn = document.getElementById('about');
+    const homeBtn = document.getElementById('home');
+    const aboutSection = document.getElementById('aboutSection');
+    const error404 = document.getElementById('error404');
+
+    aboutBtn.addEventListener('click', () => {
+      error404.style.display = 'none';
+      aboutSection.style.display = 'block';
+    });
+
+    homeBtn.addEventListener('click', () => {
+      aboutSection.style.display = 'none';
+      error404.style.display = 'block';
+    });
+
+    // Show 404 by default
+    window.addEventListener('DOMContentLoaded', () => {
+      error404.style.display = 'block';
+    });
+  </script>
 </body>
 </html>
