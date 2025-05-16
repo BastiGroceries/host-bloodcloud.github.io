@@ -4,13 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preview | BloodCloud</title>
+    
+    <!-- Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- BOXICONS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
     <!-- STYLE -->
     <link rel="stylesheet" href="assets/css/style.css">
+    
     <style>
+        /* SOCIAL LOGIN */
         .social-login a {
-            text-decoration: none; /* Remove underline */
+            text-decoration: none;
+        }
+
+        /* ====== 404 Error Section ====== */
+        .error-404 {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            color: #fff;
+            margin-top: 40px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .error-title {
+            font-size: 72px;
+            font-weight: 700;
+            color: #ff4c4c;
+            margin-bottom: 10px;
+        }
+
+        .error-message {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .error-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #21264D;
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        .error-btn:hover {
+            background-color: #1a1e3a;
         }
     </style>
 </head>
@@ -26,8 +72,8 @@
                 <img src="assets/img/rocket.png" class="form-image rocket">
                 <img src="assets/img/cloud.png" class="form-image cloud">
                 <img src="assets/img/stars.png" class="form-image stars">                
-           </div>
-           <p class="featured-words">You are Few Minutes Way To Boost Your Skills With <span>BloodCloud</span> (Preview)</p>
+            </div>
+            <p class="featured-words">You are Few Minutes Way To Boost Your Skills With <span>BloodCloud</span> (Preview)</p>
         </div>
         <div class="col col-2">
             <div class="btn-box">
@@ -35,9 +81,11 @@
                 <button class="btn btn-2" id="register">About</button>
             </div>
 
-    <!-- 404 -->
-                    </a>
-                </div>
+            <!-- 404 -->
+            <div class="error-404">
+                <h1 class="error-title">404</h1>
+                <p class="error-message">Oops! The page you're looking for doesn't exist.</p>
+                <a href="/" class="error-btn">Go Back Home</a>
             </div>
         </div>
     </div>
